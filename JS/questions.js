@@ -1,5 +1,5 @@
 (function() {
-    const titleQuestion = [...document.querySelectorAll('.questions__title')];
+    const titleQuestion = document.querySelectorAll('.questions__title');
 
     titleQuestion.forEach(question =>{
         question.addEventListener('click', ()=>{
