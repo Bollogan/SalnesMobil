@@ -2,6 +2,7 @@
     const openButton = document.querySelector('.nav__menu');
     const menu = document.querySelector('.nav__link');
     const closeMenu = document.querySelector('.nav__close');
+    const menuButtons = document.querySelectorAll('.nav__links');
 
 
     openButton.addEventListener('click', ()=>{
@@ -10,6 +11,12 @@
 
     closeMenu.addEventListener('click', ()=>{
         menu.classList.remove('nav__link--show');
+    });
+
+    menuButtons.forEach(button =>{
+        button.addEventListener('click', ()=>{
+            menu.classList.remove('nav__link--show');
+        })
     });
 
 })();
