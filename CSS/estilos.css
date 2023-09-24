@@ -175,6 +175,7 @@ body {
     width: 260px;
     overflow: hidden;
     margin: 0 auto;
+    grid-auto-rows: 3em 3em 20em;
 }
 
 .about__icon{
